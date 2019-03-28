@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body onload="init()">
+<form action="">
+    <img id="ball" src="images/ball.jpg" style="position:relative" alt=""/>
+    <h1>Click Button below to move the Ball</h1>
+    <input type="button" value="Click Me!" onclick="MoveTheBall()" />
+</form>
+<script>
+    function init() {
+        ballPosition = document.getElementById("ball");
+        ballPosition.style.position = 'relative';
+        ballPosition.style.left = '0px';
+    }
+    function MoveTheBall() {
+        ballPosition.style.left = parseInt(ballPosition.style.left) + 1 + '0px';
+    }
+</script>
+</body>
+</html>
